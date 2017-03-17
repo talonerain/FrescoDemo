@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1">
+            <TextView
+                android:id="@+id/tv_img_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正常图片："/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_view"
+                android:layout_below="@+id/tv_img_view"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/layout_img_view"
+            android:layout_weight = "1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_img_scale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="缩放图片:"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_scale"
+                android:layout_below="@+id/tv_img_scale"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/layout_img_view"
+            android:layout_weight = "1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_img_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进度条:"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_progress"
+                android:layout_below="@+id/tv_img_progress"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1">
+            <TextView
+                android:id="@+id/tv_img_corner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圆角图片："/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_corner"
+                android:layout_below="@+id/tv_img_corner"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/layout_img_view"
+            android:layout_weight = "1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_img_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圆圈图片:"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_circle"
+                android:layout_below="@+id/tv_img_circle"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                fresco:roundAsCircle="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/layout_img_view"
+            android:layout_weight = "1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_img_gif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gif图片:"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_gif"
+                android:layout_below="@+id/tv_img_gif"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1">
+            <TextView
+                android:id="@+id/tv_img_paint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片装饰："/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_paint"
+                android:layout_below="@+id/tv_img_paint"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/layout_img_view"
+            android:layout_weight = "1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_img_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多图请求:"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_more"
+                android:layout_below="@+id/tv_img_more"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/layout_img_view"
+            android:layout_weight = "1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_img_listener"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下载监听:"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_listener"
+                android:layout_below="@+id/tv_img_listener"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout3">
+
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/layout_img_view"
+            android:layout_weight = "1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_lowandhigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="双分辨率:"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_lowandhigh"
+                android:layout_below="@+id/tv_lowandhigh"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/layout_img_view"
+            android:layout_weight = "1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_temp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hierarchy复用:"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_temp1"
+
+                android:layout_below="@+id/tv_temp1"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/layout_img_view"
+            android:layout_weight = "1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+            <TextView
+                android:id="@+id/tv_temp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试2:"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_temp2"
+                android:layout_below="@+id/tv_temp2"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:text="reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight = "1"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
